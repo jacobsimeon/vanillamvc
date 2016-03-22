@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla MVC</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="create-user.html" method="GET" class="new-user-form">
+        <h1 class="form-legend">Sign up</h1>
+
+        <div class="text-input" id="username">
+          <label class="text-input__label"> Username </label>
+          <input type="text" class="text-input__control" name="user[username]">
+          <span class="text-input__validation-message"> &nbsp; </span>
+        </div>
+
+        <div class="text-input" id="password">
+          <label class="text-input__label"> Password </label>
+          <input type="password" class="text-input__control" name="user[password]">
+          <span class="text-input__validation-message"> &nbsp; </span>
+        </div>
+
+        <div class="text-input" id="password-confirmation">
+          <label class="text-input__label"> Password Confirmation </label>
+          <input type="password" class="text-input__control" name="user[password_confirmation">
+          <span class="text-input__validation-message"> &nbsp; </span>
+        </div>
+
+        <div class="submit-button">
+          <input type="submit" value="Sign up" class="submit-button__input" />
+        </div>
+
+      </form>
+    </div>
+    <script type="text/javascript" src="./lib/validation.js"></script>
+    <script type="text/javascript" src="./lib/key-produces-character.js"></script>
+    <script type="text/javascript" src="./lib/debounced-function.js"></script>
+    <script type="text/javascript" src="./lib/input-field-view.js"></script>
+    <script type="text/javascript" src="./lib/input-field-view-controller.js"></script>
+
+    <script type="text/javascript" src="./models.js"></script>
+    <script type="text/javascript" src="./controllers.js"></script>
+    <script type="text/javascript" src="./init.js"></script>
+  </body>
+</html>
+
